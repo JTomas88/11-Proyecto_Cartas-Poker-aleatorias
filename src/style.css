@@ -1,0 +1,113 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+
+body {
+  background: #0e7e12;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  background: white;
+  margin: auto;
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 80px;
+  color: black;
+}
+
+.card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+}
+
+.card:before,
+.card:after {
+  position: absolute;
+  font-size: 50px;
+}
+
+.card:before {
+  content: "";
+  top: 0px;
+  left: 10px;
+}
+
+.card .queen {
+  background-image: url(./assets/q.png);
+  height: 200px;
+  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+}
+
+.card .king {
+  background-image: url(./assets/k.png);
+  height: 200px;
+  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+}
+
+.card .jota {
+  background-image: url(./assets/j.png);
+  height: 200px;
+  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+}
+
+.card:after {
+  content: "";
+  bottom: 0px;
+  right: 10px;
+}
+
+.card.spades:before,
+.card.spades:after {
+  content: "\2660";
+}
+
+.card.clubs:before,
+.card.clubs:after {
+  content: "\2663";
+}
+
+.card.hearts:before,
+.card.hearts:after {
+  content: "\2665";
+  color: red;
+}
+
+.card.diamonds:before,
+.card.diamonds:after {
+  content: "\2666";
+  color: red;
+}
